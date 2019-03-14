@@ -1,3 +1,28 @@
 .hello-world {
   display: block;
 }
+
+.center-container {
+  display: flex;
+  justify-content: center;
+}
+
+.tris-container {
+  display: flex;
+  width: 460px;
+  height: 460px;
+  flex-wrap: wrap;
+
+  /* Hack bellissimo per disegnare la griglia */
+  background-color: grey;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tris-cell {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  font-size: 100px;
+  text-align: center;
+}
