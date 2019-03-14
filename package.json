@@ -1,0 +1,27 @@
+{
+  "name": "tris-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copy:react:dev": "cp node_modules/react/umd/react.development.js public/libs/",
+    "copy:react-dom:dev": "cp node_modules/react-dom/umd/react-dom.development.js public/libs/",
+    "copy": "npm run copy:react:dev && npm run copy:react-dom:dev",
+    "live-server": "live-server public",
+    "build:watch": "babel src/main.js -o public/main.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules
+
+# compilato da babel
+public/main.js
+
+# librerie
+public/libs
