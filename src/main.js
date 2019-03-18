@@ -22,6 +22,7 @@ function clickCell (which, status, turn) {
   return turn === 'CIRCLE' ? 'CROSS' : 'CIRCLE'
 }
 
+// torna il nome del vincitore se c'è, oppure undefined
 function compara3 (status, i1, i2, i3) {
   if (status[i1] === 'EMPTY') return undefined
   if (
@@ -51,6 +52,23 @@ function isGameOver (status) {
     if (vincitore != null) return vincitore
     return compara3(status, val[0], val[1], val[2])
   }, undefined)
+
+  /**
+   * #1 chiamata
+   * vincitore = undefined, val = [0, 1, 2]
+   * (vincitore != null) => FALSE
+   * return compara3([], 0, 1 ,2)
+   *
+   * #2 chiamata
+   * vincitore = 'CERCHIO' val = [3, 4, 5]
+   * (vincitore != null) => TRUE
+   * return 'CERCHIO'
+   *
+   * #3 chiamata
+   * vincitore = 'CERCHIO' val = [6, 7, 8]
+   * (vincitore != null) => TRUE
+   * return 'CERCHIO'
+   */
 
   return vincitore
 }
