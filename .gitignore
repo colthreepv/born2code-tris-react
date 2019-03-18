@@ -2,6 +2,7 @@ node_modules
 
 # compilato da webpack/babel
 public/bundle.js
+public/index.html
 
 # librerie
 public/libs
