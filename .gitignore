@@ -1,7 +1,7 @@
 node_modules
 
-# compilato da babel
-public/main.js
+# compilato da webpack/babel
+public/bundle.js
 
 # librerie
 public/libs
