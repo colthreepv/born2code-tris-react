@@ -6,6 +6,7 @@ module.exports = {
   devServer: {
     contentBase: './public',
   },
+  devtool: 'cheap-module-eval-source-map',
   output: {
     path: `${__dirname}/public`,
     filename: 'bundle.js'
